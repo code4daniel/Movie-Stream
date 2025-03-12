@@ -1,12 +1,27 @@
-# React + Vite
+# Movie Streaming Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+this is a responsive and feature rich Movie Streaming Application built with cutting edge tools to provide user with an engaging experience. this platform allows users to :
 
-Currently, two official plugins are available:
+- Browse and search for Movies and Tv shows
+- Stream trailers of the movies and tv shows seamlessly
+- Add their favorite shows and Rate them.
+- Enjoy an intuitive and visually appealing interfaces
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+# This project is built with .
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Vite
+- Javacript
+- React
+- shadcn-ui
+- Tailwind CSS
+
+## API Used
+- TMDB API for fetching the movies and tv shows details
+
+# Features
+- Movie Streaming
+- Search Functionality
+- Favorite and Rating
+- Responsive Design
+- Fast Loading
