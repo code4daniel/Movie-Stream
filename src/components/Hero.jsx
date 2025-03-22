@@ -1,8 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react'
-import { BiChevronLeft, BiChevronRight, BiPlay } from 'react-icons/bi'
+import { BiChevronLeft, BiChevronRight, BiPlay, BiStar } from 'react-icons/bi'
 import { fetchPopularMovies, fetchUpcomingMovies } from '../services/mediaServices';
 import {Link} from 'react-router-dom'
+import { BsStarFill } from 'react-icons/bs';
 
 export const Hero = () => {
 
@@ -23,7 +24,7 @@ export const Hero = () => {
         if(!data?.results?.length){
           throw new Error('No popular movie found')
         }
-        
+      
         setMovies(data.results);
         // console.log(data);
     
@@ -135,7 +136,8 @@ export const Hero = () => {
           
           <div className="flex items-center gap-4 text-sm font-medium text-gray-300 mb-4">
             <span>IMDB</span>
-            <span className="text-white bg-red-600 px-1.5 py-0.5 rounded text-xs">
+            <span className="text-white bg-red-600 px-1.5 py-1.5 items-center rounded text-xs gap-1  flex">
+              <BsStarFill className='text-yellow-500'/>
               {rating}
             </span>
             <span>{heroMedia.release_date.split('-')[0]}</span>

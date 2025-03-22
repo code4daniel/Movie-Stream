@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <nav className={`fixed ${hasScrolled}  top-0 right-0 left-0 z-50 transition-all  px-6 py-4  w-full  mx-auto`} >
       <div className="mx-24 flex justify-between items-center">
-        <Link to='/' className='text-2xl text-indigo-600'>MovieStream </Link>
+        <Link to='/' className='text-2xl text-indigo-600 font-bold'>MovieStream </Link>
         <div className='flex '>
           {Menulink.map((link, index) => (
             <div className="flex hover:bg-indigo-800 px-4 text-white rounded-md py-2 hover:text-white" key={index}>

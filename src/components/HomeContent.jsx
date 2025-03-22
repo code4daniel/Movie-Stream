@@ -44,7 +44,7 @@ export const HomeContent = ()=>{
                 {movies.map((movie) => {
                     return (
                         
-                        <div key ={movie.id} className="flex flex-col   mb-8">
+                        <div key ={movie.id} className="flex flex-col items-center rounded-md mb-8">
                             <div className="w-[150px]">
                                 <img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} alt={movie.title}  className=" w-auto object-cover"/>
                                 
