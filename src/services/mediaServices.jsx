@@ -51,9 +51,32 @@ export const fetchTopRatedShows = async () => {
 
 // fetch movie details
 
-export const fetchMovieDetails = async (movieId) => {
-    return await fetchFromAPI(`/movie/${movieId}`);
-}
+// export const fetchMovieDetails = async (movieIds) => {
+//     try {
+//         const moviesWithDetails = await Promise.all(
+//             movieIds.map(async (movieId) => {
+//                 const response = await fetchFromAPI(`/movie/${movieId}`); 
+//                 if (!response.ok) {
+//                     throw new Error(movie.status_message || `Failed to fetch movie details for ID: ${movieId}`);
+//                 }
+                
+//                 const movie = await response.json();
+                
+//                 return {
+//                     id: movie.id.toString(),
+//                     title: movie.title,
+//                     description: movie.overview,
+//                     genres: movie.genres.map(genre => genre.name),
+//                     duration: `${Math.floor(movie.runtime/60)}h ${movie.runtime %60}m `
+
+//                 }
+//             })
+//         )
+//         return moviesWithDetails;
+//     } catch (error) {
+//         console.error('Error fetching details', error)
+//     }
+// }
 
 // fetch TV show details
 
