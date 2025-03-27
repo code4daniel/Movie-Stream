@@ -2,6 +2,7 @@
 import { Outlet } from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home'
+import Movies from './pages/Movies'
 
 function App() {
   
@@ -10,6 +11,7 @@ function App() {
     <>
       <div>
         <Home/>
+        {/* <Movies/> */}
         {/* <Outlet/> */}
       </div>
     </>

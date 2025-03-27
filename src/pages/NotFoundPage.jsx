@@ -2,8 +2,8 @@ import React from 'react'
 
 const NotFoundPage = () => {
   return (
-    <div>
-      NOT FOUND
+    <div className='mx-38 my-24 flex text-2xl text-center'>
+      NOT FOUND PAGE
     </div>
   )
 }

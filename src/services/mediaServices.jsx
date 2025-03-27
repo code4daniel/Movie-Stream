@@ -23,12 +23,19 @@ export const searchMedia  = async (query, mediaType="movie") =>{
 
 // Fetch Popular movies
 export const fetchPopularMovies = async () =>{
-    return await fetchFromAPI('/movie/popular');
+    return await fetchFromAPI('/movie/popular?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_release_type=2|3&release_date.gte={min_date}&release_date.lte={max_date}');
+};
+
+
+
+// Fetch Popular movies
+export const fetchNowPlayingMovies = async () =>{
+    return await fetchFromAPI('/movie/now_playing?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_release_type=2|3&release_date.gte={min_date}&release_date.lte={max_date}');
 };
 
 // fetch upcoming movies
 export const fetchUpcomingMovies = async () => {
-    return await fetchFromAPI('/movie/upcoming');
+    return await fetchFromAPI('/movie/upcoming?language=en-US&page=1');
 }
 
 // fetch top rated movies
@@ -150,5 +157,6 @@ export const fetchTrendingMedia = async (mediaType = "all", timeWindow = "week")
     return await fetchFromAPI(`/trending/${mediaType}/${timeWindow}`);
 }
 
-// fetch discover movies
+// fetch kid's movies and tv shows
+
 

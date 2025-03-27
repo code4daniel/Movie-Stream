@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react'
 import { BiChevronLeft, BiChevronRight, BiPlay, BiStar } from 'react-icons/bi'
-import { fetchPopularMovies, fetchUpcomingMovies } from '../services/mediaServices';
+import { fetchNowPlayingMovies, fetchUpcomingMovies } from '../services/mediaServices';
 import {Link} from 'react-router-dom'
 import { BsStarFill } from 'react-icons/bs';
 
@@ -20,7 +20,7 @@ export const Hero = () => {
   useEffect(() => {
     const loadMedia = async () =>{
       try {
-        const data = await fetchUpcomingMovies();
+        const data = await fetchNowPlayingMovies();
         if(!data?.results?.length){
           throw new Error('No popular movie found')
         }

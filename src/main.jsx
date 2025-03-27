@@ -6,6 +6,7 @@ import './index.css'
 // componentts
 import App from './App.jsx'
 import Home from './pages/Home.jsx'
+import Movies from './pages/Movies.jsx'
 
 
 const router = createBrowserRouter(
@@ -13,6 +14,8 @@ const router = createBrowserRouter(
     
     <Route path='/' element={<App/>}>
       <Route path='/' element={<Home/>}/>
+      {/* <Route path='/movies' element={<Movies/>}/> */}
+      
       
     </Route>
   )
