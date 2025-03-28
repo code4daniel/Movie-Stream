@@ -1,5 +1,7 @@
 # Movie Streaming Application
 
+![Screenshot (18)](https://github.com/user-attachments/assets/0062009c-73ac-40e3-8cf2-0a16aab4fabb)
+
 this is a responsive and feature rich Movie Streaming Application built with cutting edge tools to provide user with an engaging experience. this platform allows users to :
 
 - Browse and search for Movies and Tv shows
