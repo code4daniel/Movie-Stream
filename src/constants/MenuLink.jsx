@@ -25,7 +25,7 @@ export const  Menulink = [
     {
         key: 'animation',
         label: 'Animations',
-        path: '/animation' ,
+        path: '/animations' ,
     },
 
     {

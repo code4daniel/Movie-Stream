@@ -26,8 +26,8 @@ const Navbar = () => {
         <Link to='/' className='text-2xl text-indigo-600 font-bold'>MovieStream </Link>
         <div className='flex '>
           {Menulink.map((link, index) => (
-            <div className="flex hover:bg-indigo-800 px-4 text-white rounded-md py-2 hover:text-white" key={index}>
-              <Link  to={link.path}>{link.label}</Link>
+            <div className="flex hover:bg-indigo-800 px-4 text-white rounded-md py-2 hover:text-white cursor-pointer" key={index}>
+              <a  href={link.path}>{link.label}</a>
             </div>
           ))}
         </div>

@@ -140,7 +140,8 @@ export const Hero = () => {
               <BsStarFill className='text-yellow-500'/>
               {rating}
             </span>
-            <span>{heroMedia.release_date.split('-')[0]}</span>
+            <span>{heroMedia.release_date}</span>
+            {/* span>{heroMedia.release_date.split('-')[0]}</span> */}
             <span>{}</span>
           </div>
           

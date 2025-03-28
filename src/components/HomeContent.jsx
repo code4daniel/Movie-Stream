@@ -25,7 +25,7 @@ export const HomeContent = ()=>{
             const data = await fetchUpcomingMovies();
             
             setUpcomingMovies(data.results);
-            // console.log("Popular Movies: ", data);
+            console.log("Upcoming Movies: ", data);
         };
         loadUpcomingMovies();
     }, []);
