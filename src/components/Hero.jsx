@@ -86,6 +86,7 @@ export const Hero = () => {
         <div
           className='absolute inset-0 transition-opacity duration-1000 ease-in-out max-w-screen mx-auto '
           style={{
+            loading: 'lazy',
             backgroundImage: `url('https://image.tmdb.org/t/p/original/${ heroMedia.backdrop_path }')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center 20%',
@@ -121,7 +122,7 @@ export const Hero = () => {
 
       {/* Content */}
       <div className="relative h-full w-full max-w-7xl mx-auto px-6 flex flex-col justify-end pb-16 md:pb-16">
-        <div className="max-w-5xl transition-opacity duration-500">
+        <div className="max-w-5xl transition-opacity duration-500 mx-16">
           <div className="flex flex-wrap gap-2 mb-4">
             {genreNames && (
               <span  className="category-chi text-white">

@@ -64,7 +64,7 @@ export const HomeContent = ()=>{
         <div className=" flex flex-col space-y-4 mt-8 text-white">
 
              {/* new Movies */}
-             <h2 className="text-center text-2xl">Upcoming Movies</h2>
+             <h2 className="text-center text-2xl border-white">Upcoming Movies</h2>
             <div className="  flex flex-row gap-4 mx-16">
                 {popularMovies.map((movie) => {
                     return (   
@@ -83,7 +83,7 @@ export const HomeContent = ()=>{
             </div> 
 
             {/* new Movies */}
-            <h2 className="text-center text-2xl">Popular Movies</h2>
+            <h2 className=" text-2xl border-orange-600 border-2 p-2 mx-16">Popular Movies</h2>
             <div className="  flex flex-row gap-4 mx-16">
                 {upcomingMovies.map((movie) => {
                     return (   

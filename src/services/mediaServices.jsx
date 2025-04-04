@@ -1,6 +1,6 @@
 import { API_BASE_URL, API_KEY, API_OPTIONS } from "../constants/ApiCalls"
 
-const fetchFromAPI = async ( endpoint) => {
+export const fetchFromAPI = async ( endpoint) => {
     try {
         const url = `${API_BASE_URL}${endpoint}?api_key${API_KEY}`;
 
@@ -15,6 +15,60 @@ const fetchFromAPI = async ( endpoint) => {
         return null;
     }
 };
+
+
+
+
+
+export const getMovieByCategory = async (category) =>{
+    
+    let url = "";
+    switch(category){
+        case "trending":
+            url = "/trending/movie/day";
+            break;
+        case "popular":
+            url = "/movie/popular";
+            break;
+        case "top_rated":
+            url = "/movie/top_rated";
+            break;
+        case "upcoming":
+            url = "/movie/upcoming";
+            break;
+        case "popular_shows":
+            url = "/tv/popular";
+            break;
+        case "top_rated_shows":
+            url = "/tv/top_rated";
+            break;
+        case "animation":
+            url = "/discover/movie?with_genres=16";
+            break;
+        case "kids":
+            url = "/discover/movie?with_genres=1076";
+            break;
+        case "horror":
+            url = "/discover/movie?with_genres=27";
+            break;
+        case "romance":
+            url = "/discover/movie?with_genres=10749";
+            break;
+        case "science_fiction":
+            url = "/discover/movie?with_genres=878";
+            break;
+        case "documentary":
+            url = "/discover/movie?with_genres=99";
+            break;
+        case "adventure":
+            url = "/discover/movie?with_genres=12";
+            break;
+        default:
+            url = "/trending/movie/day";
+    }
+    
+       return await fetchFromAPI(`${url}`);
+}
 
 // search media
 export const searchMedia  = async (query, mediaType="movie") =>{
